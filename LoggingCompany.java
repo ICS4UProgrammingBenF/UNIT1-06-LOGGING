@@ -16,7 +16,7 @@ public class LoggingCompany {
     
     //giving the user important information so they can make their decision
     System.out.println("The truck can carry max 1100 kg of logs");
-    System.out.println("You can choose to have lengths of 1m, 0.5m or 0.25m delivered");
+    System.out.println("You can choose to have lengths of 1, 0.5 or 0.25 delivered");
     System.out.println("With the above information, which length of log would you like delivered?");
         
     //declaring constant
@@ -24,18 +24,27 @@ public class LoggingCompany {
     double weightPerM = 20;
     
     //get the length of log from the user
-    double lengthDes = logLength.nextDouble();
+    Scanner input = new Scanner(System.in);
+    double lengthDes = input.nextDouble();
     
     //let the user know the length of log they have chosen
-    System.out.println("Length chosen by user is :" + logLength);
+    System.out.println("Length selected is: " + lengthDes);
+    
+    //check for incorrect values
+    if (lengthDes != 1.0 && lengthDes != 0.5 && lengthDes != 0.25)
+      {
+        System.out.println("Selected value out of range, please restart and try again");
+        System.exit(0);
+      }
+      else{}
     
     //set numMaxLogs to be the user's input
     //lengthDes = logLength;
     
     //declare variables
-    double maxWeight;
-    double weightPerM;
+    //double maxWeight;
     double numMaxLogs;
+    double maxLength;
     
     //calculate the overall total length of logs the truck can carry
     maxLength = maxWeight / weightPerM;
@@ -43,6 +52,8 @@ public class LoggingCompany {
     //calculate the max amount of logs carryable
     numMaxLogs = maxLength / lengthDes;
     
-    System.out.println("The max number of logs is :" + numMaxLogs);
+    System.out.println("The max number of logs is: " + numMaxLogs);
+    
   }
+  
 }
