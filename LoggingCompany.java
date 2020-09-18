@@ -7,7 +7,6 @@
 * @version 1.0
 * @since   2020-09-17
 */
-
 //importing the scanner class
 import java.util.Scanner;
 
@@ -31,18 +30,14 @@ public class LoggingCompany {
     System.out.println("Length selected is: " + lengthDes);
     
     //check for incorrect values
-    if (lengthDes != 1.0 && lengthDes != 0.5 && lengthDes != 0.25)
-      {
-        System.out.println("Selected value out of range, please restart and try again");
-        System.exit(0);
-      }
-      else{}
-    
-    //set numMaxLogs to be the user's input
-    //lengthDes = logLength;
+    if (lengthDes != 1 && lengthDes != 0.5 && lengthDes != 0.25)
+    {
+      System.out.println("Selected value out of range, please restart and try again");
+      System.exit(0);
+    }
+    else{}
     
     //declare variables
-    //double maxWeight;
     double numMaxLogs;
     double maxLength;
     
