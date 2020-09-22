@@ -1,5 +1,8 @@
+//importing the scanner class
+import java.util.Scanner;
+
 /**
-* The LoggingCompany program takes user input
+* The LoggingCompany program takes user input.
 * and tells the user how many logs can be carried
 * on a truck based on the length
 *
@@ -8,9 +11,14 @@
 * @since   2020-09-17
 */
 //importing the scanner class
-import java.util.Scanner;
 
 public class LoggingCompany {
+  
+  /**
+   * The dang style checker tells me.
+   * I have to have a javadoc here
+   */
+  
   public static void main(String[] args) {
     
     //giving the user important information so they can make their decision
@@ -30,12 +38,10 @@ public class LoggingCompany {
     System.out.println("Length selected is: " + lengthDes);
     
     //check for incorrect values
-    if (lengthDes != 1 && lengthDes != 0.5 && lengthDes != 0.25)
-    {
+    if (lengthDes != 1 && lengthDes != 0.5 && lengthDes != 0.25)  {
       System.out.println("Selected value out of range, please restart and try again");
       System.exit(0);
     }
-    else{}
     
     //declare variables
     double numMaxLogs;
