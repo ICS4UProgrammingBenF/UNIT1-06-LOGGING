@@ -25,7 +25,7 @@ public class LoggingCompany {
     System.out.println("The truck can carry max 1100 kg of logs");
     System.out.println("You can choose to have lengths of 1, 0.5 or 0.25 delivered");
     System.out.println("With the above information, which length of log would you like delivered?");
-        
+      
     //declaring constant
     double maxWeight = 1100;
     double weightPerM = 20;
